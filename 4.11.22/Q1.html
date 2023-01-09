@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+    background: rgb(62,57,143);
+    background: linear-gradient(90deg, rgba(62,57,143,1) 0%, rgb(29, 102, 170) 49%, rgb(39, 126, 197) 57%, rgba(0,212,255,1) 92%);
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    animation: color-change 1s infinite;
+}
+  
+@keyframes color-change {
+  0% { color: rgb(215, 57, 230); }
+  50% { color: rgb(174, 39, 207); }
+  100% { color: rgb(206, 41, 143); }
+}
+
+
+
+
+
+    </style>
+    <script>
+var i= 0
+while (i <11)
+{
+  document.write(i+++"<br>")
+}
+document.write("<br><br><br>")
+
+var i= 10
+while (i >-1)
+{
+  document.write(i--+"<br>")
+}
+document.write("<br><br><br>")
+
+var zmienna = 0;
+document.write(zmienna+"<br>");
+ 
+var suma = 0;
+for (var i = 1; i <= 10; i++)
+    suma += i;
+document.write(suma)
+
+document.write("<br><br><br>")
+
+for (var i=2;i<=20;i=i+2)
+{
+document.write(i+"<br>")
+}
+
+
+
+var x = Number(prompt("X"))
+var y = Number(prompt("y"))
+var o = 0
+var ot = 0
+while(x>0){
+    var o = o + y
+    document.write(o+"<br>")
+    x--
+}
+ot = (o/100)*8
+o = o + ot
+document.write("pracownik uzyskał"+o) 
+
+document.write("<br><br><br>")
+
+
+var x = 5
+for(var i=1;i<=100;i++){
+    var x = x + 10
+    document.write(x+"<br>")
+}
+document.write(x)
+document.write("<br><br><br>")
+
+
+var o = 0
+var x = 0
+for(var i=10;i>=1;i--){
+   x = i*i
+   o = o + x
+   document.write(x+"<br>")
+}
+
+document.write(o)
+document.write("<br><br><br>")
+
+
+var x = Number(prompt("X"))
+var y = Number(prompt("y"))
+var z = Number(prompt("z"))
+var c = 0
+while(y>0){
+c=x+c
+x=x-z
+    document.write(c+"<br>")
+   y--
+}
+
+document.write("liczba cegieł "+c) 
+document.write("<br><br><br>")      
+
+var x = 10;
+        var c = 0;
+        
+        for(i=1;i<=10;i++)
+        {
+            c += x*x;
+            x--;
+        }
+
+        document.write("liczba cegieł "+c) 
+
+        var x = Number(prompt("podaj liczbe"));
+        var y = Number(prompt("podaj liczbe"));
+        var suma = 0;
+        var z = Number(prompt("podaj dzialanie (1.dodawanie|2.odejmowanie|3.mnożenie|4.dzielenie"));
+
+        switch(z)
+        {
+            case 1:
+                suma = x+z;
+                break;
+            case 2:
+                if(x>=y)
+                {
+                    suma = x-y;
+                }
+                else
+                {
+                    suma = y-x;
+                }
+                break;
+            case 3:
+                suma = x*y;
+                break;
+            case 4:
+            if(x>=y)
+                {
+                    if(y!=0)
+                    {
+                        suma = x/y;
+                    }
+                }
+                else
+                {
+                    if(x!=0)
+                    {
+                        suma = y/x;
+                    }
+                }
+                
+        }
+        
+        document.write(suma);
+        document.write("<br><br><br>")
+        var a = Number(prompt("liczba"));
+        var b = Number(prompt("dlugosc"));
+        var c = Number(prompt("różnica"));
+        var suma = 0;
+
+        for(i=1;i<=b;i++)
+        {
+            suma += a;
+            a +=c;
+            document.write(suma+"<br>")
+        }   
+
+        var licznik = 0;
+        do
+        {
+            var x = Number(prompt("liczba x"));
+            var y = Number(prompt("liczba y"));
+            var suma = 0;
+
+            suma = x+y;
+            licznik++;
+            document.write(licznik+". "+suma);
+        }
+        while(suma != 0)
+        
+        var n = Number(prompt("liczba"));
+        var i = 1;
+        var s = 1;
+        while (i <= n) s *= i++;
+        document.write(n + '! = ' + s);
+
+        var x = Number(prompt("liczba"));
+        var suma = 0;
+
+        for(i=1;i<=10;i++)
+        {
+            x**=2;
+            document.write(x+"<br>");            
+        }
+
+        var x = 0;
+        var suma = 0;
+        for(i=1;i<=10;i++)
+        {
+            x = Math.floor(Math.random()*(100-50)+50);
+            suma += x;
+        }
+
+        document.write("suma wynosi: "+suma+"<br>");
+
+        suma /= 10;
+        document.write("średnia wynosi: "+suma);
+        document.write("<br><br><br>")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
